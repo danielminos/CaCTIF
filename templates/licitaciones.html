@@ -1,0 +1,331 @@
+{% load static %}
+<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/licitaciones.css' %}">
+	<link rel="stylesheet" href="{% static 'css/hyf.css' %}">
+    <title>HSR - Administracion</title>
+</head>
+    <header class="header">
+        
+        {% include 'nav.html' %}
+
+    </header>
+
+
+<body>
+    <br>
+    <br>
+    <h2>ADMINISTRADORA:</h2>
+    <h3>LIFCHIFTZ Nieves</h3>
+    <P>administracion@hospitalsantarosa.com.ar</P>
+    <p>Tel: 03455 - 423446</p>
+    <br>
+    <br>
+    <h3>OFICINA DE COMPRAS:</h3>
+    <p> Tel: 03455 - 422652</p>
+    <p> Tel: 03455 - 421311/1581 Interno 220</p>
+    <p> licitaciones@hospitalsantarosa.com.ar</p>
+    <br>
+    <p>Todo oferente que se presente en algun rubro debe entregar el sobre personalmente o enviarlo por correo postal (no correo electrónico)</p>
+    <p>En el exterior del sobre solamente debe figurar el cotejo al que se presenta </p>
+    <p>A tener presente por los oferentes en cada Cotización:
+    <a href="{% static 'files/pliego condiciones.pdf' %}">Pliego de Condiciones Generales</a></p>
+    <br>
+    <br>
+    <br>   
+    <div class="contDiv">
+    <div class="padre" id="p2023" onclick="mostrar('2023')">
+        <h1>2023</h1>
+    </div>
+
+    <div class="hijo" id="2023" onclick="ocultar('2023')">
+        <h1>2023</h1>
+        
+        <p id="pfile"> 0022/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0022_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/LP 0022_2023.xlsx' %}">XLS</a>
+        <a href="{% static 'files/comparativas/2023/Comparativa_0022-2023.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0021/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0021_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/LP 0021_2023.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0021-2023.pdf' %}">Comparativa</a></p>
+	
+        <p id="pfile"> 0020/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0020_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/LP 0020_2023.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0020-2023.pdf' %}">Comparativa</a></p>
+	
+        <p id="pfile"> 0019/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0019_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/LP 0019_2023.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0019-2023.pdf' %}">Comparativa</a></p>
+            
+        <p id="pfile"> 0018/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0018_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/LP 0018_2023.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0018-2023.pdf' %}">Comparativa</a></p>
+            
+        <p id="pfile"> 0017/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0017_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/LP 0017_2023.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0017-2023.pdf' %}">Comparativa</a>
+
+        <p id="pfile"> 0006/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0006_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/Licitacion0006_2023.pdf' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0006-2023.pdf' %}">Comparativa</a>
+
+        <p id="pfile"> 0005/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0005_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/Licitacion0005_2023.pdf' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0005-2023.pdf' %}">Comparativa</a>
+
+        <p id="pfile"> 0004/2023:
+        <a href="{% static 'files/licitaciones/2023/LP0004_2023.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2023/Licitacion0004_2023.pdf' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0004-2023.pdf' %}">Comparativa</a>
+
+        <p id="pfile"> 0003/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0003_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/Licitacion0003_2023.pdf' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0003-2023.pdf' %}">Comparativa</a>
+
+        <p id="pfile"> 0002/2023: 
+        <a href="{% static 'files/licitaciones/2023/LP0002_2023.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2023/Licitacion0002_2023.pdf' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2023/Comparativa_0002-2023.pdf' %}">Comparativa</a>
+    </div>
+
+    <div class="padre" id="p2022" onclick="mostrar('2022')">
+        <h1>2022</h1>
+    </div>
+
+    <div class="hijo" id="2022" onclick="ocultar('2022')">
+        <h1>2022</h1>
+        <p id="pfile"> 0059/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0059_2022.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2022/LPriv_0059_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0059_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0058/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0058_2022.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2022/LPriv_0058_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0058_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0057/2022:
+        <a href="{% static 'files/licitaciones/2022/LPriv_0057_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0057_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0057_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0056/2022:
+        <a href="{% static 'files/licitaciones/2022/LPriv_0056_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0056_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0056_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0055/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0055_2022.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2022/LPriv_0055_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0055_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0054/2022:
+        <a href="{% static 'files/licitaciones/2022/LPriv_0054_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0054_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0054_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0053/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0053_2022.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2022/LPriv_0053_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0053_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0030/2022:
+        <a href="{% static 'files/licitaciones/2022/LPriv0030_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv0030_2022.xlsx' %}">XLS</a>
+        <a href="{% static 'files/comparativas/2022/Comparativa0030_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0029/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0029_2022.pdf' %}">PDF</a>
+        <a href="{% static 'files/licitaciones/2022/LPriv_0029_2022.xlsx' %}">XLS</a>
+        <a href="{% static 'files/comparativas/2022/Comparativa0029_2022.pdf' %}">XLS</a></p>
+
+        <p id="pfile"> 0028/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0028_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0028_2022.xlsx' %}">XLS</a>
+        <a href="{% static 'files/comparativas/2022/Comparativa0028_2022.pdf' %}">XLS</a></p>
+
+        <p id="pfile"> 0027/2022:
+        <a href="{% static 'files/licitaciones/2022/LPriv_0027_2022.pdf' %}">PDF</a>  
+        <a href="{% static 'files/licitaciones/2022/LPriv_0027_2022.xlsx' %}">XLS</a>
+        <a href="{% static 'files/comparativas/2022/Comparativa0027_2022.pdf' %}">XLS</a></p>
+
+        <p id="pfile"> 0026/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0026_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0026_2022.xlsx' %}">XLS</a>
+        <a href="{% static 'files/comparativas/2022/Comparativa0026_2022.pdf' %}">XLS</a></p>	
+
+        <p id="pfile"> 0006/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0006_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0006_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0006_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0005/2022:
+        <a href="{% static 'files/licitaciones/2022/LPriv_0005_2022.pdf' %}">PDF</a>  
+        <a href="{% static 'files/licitaciones/2022/LPriv_0005_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0005_2022.pdf' %}">Comparativa</a>
+        </p>
+
+        <p id="pfile"> 0004/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0004_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0004_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0004_2022.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile"> 0003/2022: 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0003_2022.pdf' %}">PDF</a> 
+        <a href="{% static 'files/licitaciones/2022/LPriv_0003_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static 'files/comparativas/2022/Comparativa0003_2022.pdf' %}">Comparativa</a></p>	
+
+        <p id="pfile"> 0002/2022: 
+        <a href="{% static '/files/licitaciones/2022/LPriv_0002_2022.pdf' %}">PDF</a> 
+        <a href="{% static '/files/licitaciones/2022/LPriv_0002_2022.xlsx' %}">XLS</a> - 
+        <a href="{% static '/files/comparativas/2022/Comparativa0002_2022.pdf' %}">Comparativa</a></p>
+    </div>
+
+    <div class="padre" id="p2021" onclick="mostrar('2021')">
+        <h1>2021</h1>
+    </div>
+
+    <div class="hijo" id="2021" onclick="ocultar('2021')">
+        <h1>2021</h1>
+	
+        <p id="pfile">  0075/2021: 
+        <a href="{% static 'files/licitaciones/2021/0075_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0075_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0074/2021: 
+        <a href="{% static 'files/licitaciones/2021/0074_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0074_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0073/2021: 
+        <a href="{% static 'files/licitaciones/2021/0073_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0073_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0072/2021: 
+        <a href="{% static 'files/licitaciones/2021/0072_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0072_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0071/2021: 
+        <a href="{% static 'files/licitaciones/2021/0071_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0071_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0052/2021: 
+        <a href="{% static 'files/licitaciones/2021/0052_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0052_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0051/2021: 
+        <a href="{% static 'files/licitaciones/2021/0051_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0051_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0050/2021: 
+        <a href="{% static 'files/licitaciones/2021/0050_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0050_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0049/2021: 
+        <a href="{% static 'files/licitaciones/2021/0049_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0049_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0048/2021: 
+        <a href="{% static 'files/licitaciones/2021/0048_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0048_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0047/2021: 
+        <a href="{% static 'files/licitaciones/2021/0047_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0047_2021.pdf' %}">Comprarativa</a></p>
+
+        <p id="pfile">  0046/2021: 
+        <a href="{% static 'files/licitaciones/2021/0046_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0046_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0045/2021: 
+        <a href="{% static 'files/licitaciones/2021/0045_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0045_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0027/2021: 
+        <a href="{% static 'files/licitaciones/2021/0027_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0027_2021.pdf' %}">Comparativa</a></p> 
+
+        <p id="pfile">  0026/2021: 
+        <a href="{% static 'files/licitaciones/2021/0026_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0026_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0025/2021: 
+        <a href="{% static 'files/licitaciones/2021/0025_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0025_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0024/2021: 
+        <a href="{% static 'files/licitaciones/2021/0024_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0024_2021.pdf' %}">Comparativa</a></p> 
+
+        <p id="pfile">  0023/2021: 
+        <a href="{% static 'files/licitaciones/2021/0023_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0023_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0022/2021: 
+        <a href="{% static 'files/licitaciones/2021/0022_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0022_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0021/2021: 
+        <a href="{% static 'files/licitaciones/2021/0021_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0021_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0020/2021: 
+        <a href="{% static 'files/licitaciones/2021/0020_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0020_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0005/2021: 
+        <a href="{% static 'files/licitaciones/2021/0005_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0005_2021.pdf' %}">Comparativa</a></p> 
+            
+        <p id="pfile">  0004/2021: 
+        <a href="{% static 'files/licitaciones/2021/0004_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0004_2021.pdf' %}">Comparativa</a></p> 
+
+        <p id="pfile">  0003/2021: 
+        <a href="{% static 'files/licitaciones/2021/0003_2021.pdf' %}">PDF</a> 
+        <a href="{% static 'files/comparativas/2021/Comparativa_0003_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0002/ 2021: 
+        <a href="{% static 'files/licitaciones/2021/0002_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0002_2021.pdf' %}">Comparativa</a></p>
+
+        <p id="pfile">  0001/2021: 
+        <a href="{% static 'files/licitaciones/2021/0001_2021.pdf' %}">PDF</a>
+        <a href="{% static 'files/comparativas/2021/Comparativa_0001_2021.pdf' %}">Comparativa</a></p> 
+    </div>
+</div>
+
+<script>
+	function mostrar(id){
+    document.getElementById(id).style.display= 'inline-block';
+	document.getElementById('p'+id).style.display= 'none';
+};
+
+	function ocultar(id){
+	document.getElementById(id).style.display= 'none';
+	document.getElementById('p'+id).style.display= 'inline-block';
+};
+</script>
+
+</body>
+<center>
+    <footer class="footer">
+        
+        {% include 'footer.html' %}
+
+    </footer>
+</center>
+</html>

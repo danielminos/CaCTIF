@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSR - Servicios Médicos</title>
+  <link rel="stylesheet" href="{% static 'css/hyf.css' %}">
+  <link rel="stylesheet" href="{% static 'css/pacientes.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        {% include 'nav.html' %}
+    </header>
+
+
+<center>
+    <div>
+        <h1>Hospital Santa Rosa - Villaguay</h1>
+        <br>
+        <h2>Servicios Médicos</h2>
+        <br>
+        <h4>Nuestros servicios y profesionales para brindarle una atención integral y completa.</h4>
+        <h4>Por turnos telefónicos comunicarse a: 03455 - 421311/421581 Int: 209</h4>
+        <br>
+        <p><b>IMPORTANTE:</b> Los turnos será otorgados por ventanilla, <i><u>por orden de llegada</u></i>, a partir de las 06.00 hs.</p>
+        
+        <p>Recuerde que para <b id="urg">URGENCIAS</b> nuestro Hospital cuenta con <b>Guardia Activa las 24 hs.</b></p>
+    </div>
+</center>
+    <section>
+        {% for servicio in servicios %}
+            <details>
+                <summary>{{servicio.servicio}}</summary>
+                <!-- {% for atencion in atenciones %}
+                    {% if {{atencion.servicio}}=={{servicio.servicio}} %}
+                        <p><b> {{atencion.profesional}} - {{atencion.lunes}} - {{atencion.martes}} - {{atencion.miercoles}} - {{atencion.jueves}} - {{atencion.viernes}} </b></p>
+                    {% endif %}
+                {% endfor %} -->
+            </details>    
+        {% endfor %}
+ 
+        {% for profesional in profesionales %}
+            <details>
+                <summary> {{profesional.profesional}} </summary>
+            </details>
+        {% endfor %}
+ 
+        <details>
+            <summary>CARDIOLOGIA</summary>
+            <p><b>Dr. Navarro:</b> lunes, miércoles y viernes, por la mañana.</p>
+            <p><b>Dr. Pérez:</b> martes, por la mañana.</p>
+            <p><b>Dr. Reyes:</b> martes, jueves y viernes, por la mañana.</p>
+            
+        </details>
+        
+        <details>
+            <summary>CIRUGÍA</summary>
+            <p><b>Dr. Blanco:</b> lunes y viernes, por la mañana.</p>
+            <p><b>Dr. Hundt:</b> martes y miércoles, por la mañana.</p>
+            <p><b>Dr. Ilari:</b> martes y viernes, por la mañana.</p>
+        </details>
+        
+        <details>
+            <summary>ClÍNICA MÉDICA</summary>
+            <p><b>Dr. Almirón:</b> lunes, martes, miércoles y viernes, por la mañana.</p>
+            <p><b>Dr. González:</b> lunes, martes, jueves y viernes, por la mañana.</p>
+            <p><b>Dr. Pérez:</b> lunes, miércoles y jueves, por la mañana.</p>
+            <p><b>Dr. Silva:</b> martes, miércoles, jueves y viernes, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>DIAGNÓSTICO POR IMÁGENES</summary>
+            <p><b>Dr. Artaza:</b> lunes y miércoles, 11:00 hs.</p>
+            <p><b>Dr. Char:</b> lunes, martes y jueves, 16:30 hs.</p>
+            <p><b>Dr. De la Rosa:</b> lunes, 14:00 hs.</p>
+            <p><b>Dr. Ortega:</b> martes 15:30 hs, jueves 07:30 hs, viernes 07:00 hs.</p>
+        </details>
+        
+        <details>
+            <summary>GINECOLOGÍA</summary>
+            <p><b>Dr. Debernardi:</b> lunes y jueves, por la mañana.</p>
+            <p><b>Dr. Fink:</b> martes y viernes, por la mañana.</p>
+            <p><b>Dr. Ingleson:</b> lunes, miercoles y viernes, por la mañana.</p>
+            <p><b>Dr. León:</b> miércoles, por la mañana.</p>
+            <p><b>Dra. Ríos:</b> martes y jueves, por la mañana.</p>
+            <p><b>Dr. Tyrrell:</b> martes y jueves, por la mañana.</p>
+        </details>
+        
+        <details>
+            <summary>NUTRICIÓN</summary>
+            <p><b>Lic. Corfield:</b> miércoles, por la mañana.</p>
+            <p><b>Lic. Secchi:</b> lunes, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>OFTALMOLOGÍA</summary>
+            <p><b>Dr. Lucca:</b> lunes, miércoles y viernes, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>OTORRINOLARINGOLOGÍA</summary>
+            <p><b>Dr. Barolin:</b> lunes y miércoles, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>PEDIATRÍA</summary>
+            <p><b>Dra. Nass:</b> lunes y jueves 10:00 hs, martes 06:30 hs, viernes 09:00 hs.</p>
+            <p><b>Dra. Molina:</b> jueves 07:00 hs.</p>
+            <p><b>Dra. Morales:</b> martes 08:30 hs, viernes 07:00 hs.</p>
+            <p><b>Dra. Pressel:</b> lunes, miércoles y viernes, 07:30 hs.</p>
+            <p><b>Dra. Tamareu:</b> martes 07:00 hs, miércoles 06:45 hs.</p>
+        </details>
+
+        <details>
+            <summary>PODOLOGÍA</summary>
+            <p><b>Ferro:</b> martes y jueves, por la mañana.</p>
+            <p><b>Rodríguez:</b> miércoles, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>PSICOLOGÍA</summary>
+            <p><b>Dra. Crosa:</b> jueves, por la mañana.</p>
+            <p><b>Lic. Etchevest:</b> jueves y viernes, por la mañana.</p>
+            <p><b>Lic. Monzón:</b> viernes, por la mañana.</p>
+            <p><b>Dra. Schin:</b> martes, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>PSIQUIATRÍA</summary>
+            <p><b>Dr. Garcilazo:</b> miércoles y jueves, por la mañana.</p>
+            <p><b>Dr. Gómez:</b> martes, por la mañana.</p>
+        </details>
+
+        <details>
+            <summary>TRAUMOTOLOGÍA</summary>
+            <p><b>Dr. Fioretti:</b> lunes y miércoles, por la mañana.</p>
+            <p><b>Dr. Manzato:</b> jueves, por la mañana.</p>
+            <p><b>Dr. Protto:</b> viernes, por la mañana.</p>
+            <p><b>Dr. Traumato:</b> martes,	por la mañana.</p>
+            <p><b>Dr. Treppo:</b> jueves, por la mañana.</p>
+        </details>
+    </section>
+</body>  
+
+<center>
+    <footer class="footer">
+        {% include 'footer.html' %}
+    </footer>
+</center>
+</html>

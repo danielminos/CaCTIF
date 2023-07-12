@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+
+    grid-template-areas: "header header header"
+                        "contenido contenido sidebar"
+                        "widget-1 widget-2 sidebar"
+                        "footer footer footer";
+}
+
+.contenedor .contenido{
+    grid-area: contenido;
+    padding: 10px;
+    border: #146C94 solid;
+}
+
+.contenedor .sidebar{
+    grid-column: 3 / 4;    
+    text-align: center;
+    background-color: #5C8984;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1;
+    padding: 70px;
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2;
+    padding: 10px;
+}
+
+.contenedor .header{
+    grid-area: header;
+}
+
+.contenedor .footer{
+    grid-area: footer;
+}
+
+.numeros{
+    font-size: 2rem;
+}
+
+.saludmental{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.i144{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.vacunas{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .barra{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .svg{
+    width: 2em;
+    height: 2em;
+  }
+
+  .header .barra .button{
+    display: none;
+  }
+
+@media screen and (max-width: 1080px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+    .contenedor .sidebar{
+        display: flex;
+    }
+    #titulo{
+        font-size: 0.75em;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 830px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+    .contenedor .sidebar{
+        display: flex;
+    }
+    #titulo{
+        font-size: small;
+        width: 70%;
+    }
+    #logomsal{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px){
+	.header .barra .button{
+        display: block;
+        cursor: pointer;
+    }
+    .header .barra .navegador{
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navegador.activo {
+        height: 50vh;
+        pointer-events: auto;
+    }
+    .header .barra .navegador >ul{
+        flex-direction: column;
+    } 
+    .header .barra .li{
+        margin: 1rem 0;
+    }   
+    .contenedor .sidebar{
+        display: flex;
+    }
+    #logohospital{
+        display: none;
+    }
+    #titulo{
+        width: 90%;
+    }
+    .numeros{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+section {
+    width: 95%;
+    padding: 40px;
+    background: whitesmoke;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+summary {
+    background: #5C8984;
+    color: whitesmoke;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    padding: 10px;
+    background: whitesmoke;
+}
+

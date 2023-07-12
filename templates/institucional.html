@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/institucional.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hyf.css' %}">
+    <title>HSR - Institucional</title>
+</head>
+<body>
+        <header class="header">
+            
+            {% include 'nav.html' %}
+
+        </header>
+    
+    <center>
+    <div>
+        <h1>Hospital Santa Rosa - Villaguay</h1>
+        <br>        
+    </div>
+    </center>    
+    <div class="autoridades">
+        <h2>DIRECTORA:</h2>
+        <h3>{{nombre_directora}}</h3>
+        <p>Tel: 03455 - 427072</p>
+        <br>  
+        <h3>SECRETARIO TÉCNICO:</h3>
+        <h4>{{nombre_sectecnico}}</h4>
+        <p>Tel: 03455 - 421311/1581 Int: 227</p>
+    </div>
+    
+    <br>
+    
+    <h2>Historia</h2>
+    <article class="textohistoria">    
+        <p>El Hospital Santa Rosa comenzo a funcionar en un viejo edificio ubicado sobre 
+        calle Irigoyen entre Sarmiento y Esquiu, donde actualmente se encuentra el Hogar 
+        de Ancianos de Villaguay. </p>        
+        <br>
+        <p>El inmueble, de cinco cuerpos y capilla, fue construido hacia 1886 y durante 
+        muchos años albergó al Hospital de Caridad, acaso el primer centro asistencial 
+        de la ciudad, dirigido por una Sociedad de Beneficencia.</p>
+        <br>
+        <p>En 1963 el hospital Santa Rosa se traslado hacia el gran edificio que 
+        ocupa en la actualidad, sobre calle San Martin al norte, que habia sido 
+        inaugurado el 17 de octubre de 1949 con el nombre &quot;Hospital de Llanura Dr. 
+        Alejandro Raimondi&quot; (*) </p>
+        <br>
+        <p>La construcción, la mas amplia de la ciudad, fue erigida por la empresa 
+        cordobesa Roggio SRL, en un terreno adquirido por el municipio durante la 
+        intendencia de Miguel Angel García (1935/1939) y donado posteriormente al 
+        gobierno nacional. Originado en base a un proyecto del diputado nacional 
+        entrerriano Juan P. Morrogh Bernard, el &quot;Hospital Llanura&quot; sirvió también 
+        durante sus primeros años para la atención de enfermos de tuberculosis. </p>
+        <br>
+        <p>En 1963 incorporó en su seno al hospital Santa Rosa, mientras que en 1973 
+        anexó un asilo de ancianos en el ala izquierda del segundo piso. En 1979 fue 
+        transferido de la nación a la provincia. Y el 1 de enero de 1980 dejo de 
+        llamarse &quot;Hospital de Llanura Dr. Raimondi&quot; para adoptar el nombre actual.</p>
+        <br>
+        <p>Durante los últimos años, el edificio ha albergado no solo al hospital sino 
+        también al Centro Provincial de Rehabilitación</p>
+        <br>   
+    </article>
+
+    <section class="mapseimagen">
+        <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13555.768769573644!2d-59.023039683815384!3d-31.853788269718002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b180ba8baa9e15%3A0xfb59954970590a6d!2sHospital%20Santa%20Rosa!5e0!3m2!1ses-419!2sar!4v1684420157842!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </section>
+<center>
+    <footer class="footer">
+        {% include 'footer.html' %}
+    </footer>
+</center>
+</body>
+</html>

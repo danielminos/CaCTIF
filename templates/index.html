@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/principal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hyf.css' %}">
+    <title>Hospital "Santa Rosa" de Villaguay</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+       
+          {% include 'nav.html' %}
+                  
+        </header>
+        <main class="contenido">
+            <div class="texto">
+                
+                
+                <div class="slider-container">  
+                    <img
+                      class="slider-item"
+                      class="vacunas" src="{% static 'img/calendario.png' %}" alt=""
+                    />
+                    <img
+                      class="slider-item" id="dengue"
+                      src="{% static 'img/DENGUE.jpg' %}"
+                    />
+                    <img
+                      class="slider-item" id="campa"
+                      src="{% static 'img/vacunacion2023.jpg' %}"
+                    />
+                  </div>  
+            </div>
+        </main>
+        <aside class="sidebar">
+            <br>
+            <img src="{% static 'img/bomberos.png' %}" alt="">
+            <br>
+            <P class="numeros">100</P>
+            <br>
+            <p>BOMBEROS</p>
+            <br>
+            <img src="{% static 'img/policecar.png' %}" alt="">
+            <br>
+            <P class="numeros">101</P>
+            <br>
+            <p>POLICIA</p>
+            <br>
+            <img src="{% static 'img/ambulance.png' %}" alt="">
+            <br>
+            <P class="numeros">107</P>
+            <br>
+            <p>EMERGENCIAS</p>
+            <br>
+            
+            <br>
+            <p class="numeros">144</p>
+            <br>
+            <P>VIOLENCIA DE GENERO</P>
+        </aside>
+        <div class="widget-1">
+            <img class="i144" src="{% static 'img/144.jpg' %}" alt="">
+        </div>
+        <div class="widget-2">
+            <img class="saludmental" src="{% static 'img/saludmental.jpg' %}" alt="">            
+        </div>
+        
+        
+        <footer class="footer">
+            
+            {% include 'footer.html' %}
+
+        </footer>
+
+    </div>
+</body>
+</html>
